@@ -1,4 +1,4 @@
-from typeguard import typechecked  # TODO: instalar typeguard en el entorno virtual
+from typeguard import typechecked
 from abc import ABC
 import os
 
