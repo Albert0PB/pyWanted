@@ -2,7 +2,6 @@ from dependencies.general_use import get_page_info
 from utils.depurators import depurate_list
 from utils.name_generator import name_generator_by_datetime
 import matplotlib. pyplot as plt
-import datetime
 import time
 
 
