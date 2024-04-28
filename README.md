@@ -66,4 +66,5 @@ a much more elegant way. God bless ´Murica!
 #### Pythonic Shenanigans:
 - [A progress bar in Python](https://www.youtube.com/watch?v=x1eaT88vJUA) 
 - [Bar graphs with Matplotlib](https://www.youtube.com/watch?v=zwSJeIcRFuQ)
+- [Fixing matplotlib graphs issues](https://www.youtube.com/watch?v=C8MT-A7Mvk4)
 

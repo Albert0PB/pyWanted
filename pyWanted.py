@@ -30,8 +30,8 @@ def welcome():
 
 def main():
     global url
-    # TODO: usar matplotlib
     # TODO: implementar menús y guardado en ficheros
+    # TODO: barra de carga
 
     main_menu = Menu()
     saves_menu = Menu()
