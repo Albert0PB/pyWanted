@@ -8,6 +8,11 @@ def depurate_list(list_to_depurate: list):
 
 def is_there_internal_lists(list_to_check: list):
     for i in list_to_check:
-        return True if isinstance(i, list) else False
+        if isinstance(i, list):
+            return True
+    return False
 
+
+if __name__ == "__main__":
+    print(depurate_list([[[[5], [[[4], [[[1]]], [3]]], [2]]]]))
 

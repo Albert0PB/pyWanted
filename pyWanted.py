@@ -2,7 +2,7 @@
 pyWanted: the most-wanted application
     Author:                     Alberto Pérez Bernabeu
     Starting date:              2024-04-23
-    Last modification:          2024-04-28
+    Last modification:          2024-04-29
 """
 
 from utils.menu import Menu
