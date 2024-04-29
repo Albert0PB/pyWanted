@@ -20,7 +20,7 @@ each of them (in the case of suspects not related to any field office, that is s
 
 [ ] Filter suspects with active rewards.
 
-[ ] Use Python's Matplotlib to display statistics.
+[x] Use Python's Matplotlib to display statistics.
 
 [ ] Browse suspect information by name (and exporting it to a file).
 
@@ -64,7 +64,6 @@ a much more elegant way. God bless ´Murica!
 - [Exponential Backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
 
 #### Pythonic Shenanigans:
-- [A progress bar in Python](https://www.youtube.com/watch?v=x1eaT88vJUA) 
 - [Bar graphs with Matplotlib](https://www.youtube.com/watch?v=zwSJeIcRFuQ)
 - [Fixing matplotlib graphs issues](https://www.youtube.com/watch?v=C8MT-A7Mvk4)
 
