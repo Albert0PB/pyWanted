@@ -60,4 +60,5 @@ a much more elegant way. God bless ´Murica!
 #### Pythonic Shenanigans:
 - [Bar graphs with Matplotlib](https://www.youtube.com/watch?v=zwSJeIcRFuQ)
 - [Fixing matplotlib graphs issues](https://www.youtube.com/watch?v=C8MT-A7Mvk4)
+- [Sorting dictionaries](https://www.freecodecamp.org/news/python-sort-dictionary-by-key/)
 
