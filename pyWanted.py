@@ -2,10 +2,9 @@
 pyWanted: the most-wanted application
     Author:                     Alberto Pérez Bernabeu
     Starting date:              2024-04-23
-    Last modification:          2024-04-29
+    Last modification:          2024-04-30
 """
 
-from utils.menu import Menu
 from dependencies.suspects_per_office import generate_suspects_per_office_files
 
 url = 'https://api.fbi.gov/wanted/v1/list'
@@ -28,11 +27,6 @@ def welcome():
 
 def main():
     global url
-    # TODO: implementar menús y guardado en ficheros
-    # TODO: barra de carga
-
-    main_menu = Menu()
-    saves_menu = Menu()
 
     welcome()
 
