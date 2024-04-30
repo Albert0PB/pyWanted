@@ -14,19 +14,13 @@ each of them (in the case of suspects not related to any field office, that is s
 
 ### Ideas for further versions
 
-[ ] Implement database management (SQL) or Python's Pandas to make easier consults (GROUP BY could help a lot here).
-
-[ ] Filter suspects with known possible locations.
-
-[ ] Filter suspects with active rewards.
-
-[x] Use Python's Matplotlib to display statistics.
-
-[ ] Browse suspect information by name (and exporting it to a file).
-
-[ ] Retrieve information about all the suspects relative to a certain field office.
-
-[ ] Check the most-recently updated suspects information.
+- [ ] Implement database management (SQL) or Python's Pandas to make easier consults (GROUP BY could help a lot here).
+- [ ] Filter suspects with known possible locations.
+- [ ] Filter suspects with active rewards.
+- [x] Use Python's Matplotlib to display statistics.
+- [ ] Browse suspect information by name (and exporting it to a file).
+- [ ] Retrieve information about all the suspects relative to a certain field office.
+- [ ] Check the most-recently updated suspects information.
 
 
 
