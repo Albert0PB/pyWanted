@@ -40,9 +40,6 @@ def generate_suspects_per_office_files():
     generate_csv_file(sorted_offices_info)
     generate_bar_graph(list(sorted_offices_info.keys()), list(sorted_offices_info.values()))
     print("Files generated satisfactorily.")
-    # total = sum(list(offices_info.values()))
-    #  for office in sorted_offices_names:
-    #      print(f"{office}: {offices_info[office]} / {total}")
 
 
 def generate_bar_graph(items: list[str], items_count: list[int]):
