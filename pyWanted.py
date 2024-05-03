@@ -50,7 +50,7 @@ def main():
                           'any consult.')
                 else:
                     extractor = data_extractors.SuspectsPerOfficeExtractor()
-                    csv_saver, png_saver = data_savers.SaverCSV, data_savers.SaverPNG
+                    csv_saver, png_saver = data_savers.SaverCSV, data_savers.SaverBarGraphPNG
                     csv_saver.save(datasource=data, data_extractor=extractor)
                     print('Data successfully saved (in folder "data_results").')
 

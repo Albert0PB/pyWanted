@@ -32,7 +32,7 @@ class SaverCSV(Saver):
 
 
 @typechecked
-class SaverPNG(Saver):
+class SaverBarGraphPNG(Saver):
     @classmethod
     def save(cls, datasource: WantedApiInfo, data_extractor: DataExtractor):
         data_to_save = data_extractor.obtain_from(datasource)
