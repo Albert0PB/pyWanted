@@ -20,7 +20,7 @@ class SaverCSV(Saver):
         data_to_save = data_extractor.obtain_from(datasource)
         cls.__write_csv(data_to_save, datasource.consult_datetime)
 
-    # TODO: change the way the CSV is writen so it has two columns and fifty rows instead
+    # TODO: change the way the CSV is writen. Suspects per office should have two columns and fifty-ish rows.
     @staticmethod
     def __write_csv(data_to_write, filename):
         csv_fields = data_to_write.keys()
