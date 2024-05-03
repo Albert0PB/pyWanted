@@ -14,7 +14,8 @@ each of them (in the case of suspects not related to any field office, that is s
 
 ### Ideas for further versions
 
-- [ ] Implement database management (SQL) or Python's Pandas to make easier consults (GROUP BY could help a lot here).
+- [x] Implement Python's Pandas to manage the data retrieved.
+- [ ] Implement SQL to make easier consults (GROUP BY could help a lot).
 - [ ] Filter suspects with known possible locations.
 - [ ] Filter suspects with active rewards.
 - [x] Use Python's Matplotlib to display statistics.
