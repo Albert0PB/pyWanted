@@ -1,4 +1,4 @@
-from dependencies.data_storage import WantedApiInfo
+from classes.data_storage import WantedApiInfo
 from typeguard import typechecked
 from utils.depurators import depurate_list
 from abc import ABC

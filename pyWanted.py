@@ -5,8 +5,8 @@ pyWanted: the most-wanted application
     Last modification:          2024-05-03
 """
 
-from dependencies.data_storage import WantedApiInfo
-from dependencies import data_savers, data_extractors
+from classes.data_storage import WantedApiInfo
+from classes import data_savers, data_extractors
 from utils.menu import Menu
 from sys import exit
 

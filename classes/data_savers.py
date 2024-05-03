@@ -1,6 +1,6 @@
 from typeguard import typechecked
-from dependencies.data_storage import WantedApiInfo
-from dependencies.data_extractors import DataExtractor
+from classes.data_storage import WantedApiInfo
+from classes.data_extractors import DataExtractor
 from abc import ABC
 import matplotlib.pyplot as plt
 import csv
