@@ -29,7 +29,6 @@ def welcome():
 
 
 def main():
-    global ENDPOINT
     data_already_retrieved = False
     main_menu = Menu('Exit.', 'Get data from the FBI API.', 'Generate suspects per office.')
     welcome()
