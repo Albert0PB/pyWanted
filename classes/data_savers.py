@@ -39,8 +39,8 @@ class SaverBarGraphPNG(Saver):
         cls.__generate_bar_graph(data_to_save, datasource.consult_datetime)
 
     @staticmethod
-    def __generate_bar_graph(data: dict[str: int], filename: str):
-        items, count = data.keys(), data.values()
+    def __generate_bar_graph(data: dict, filename: str):
+        items, count = list(data.keys()), list(data.values())
         fig, ax = plt.subplots()
         plt.xticks(rotation=90)
         ax.tick_params(axis='x', which='major', pad=15, labelsize=5)
