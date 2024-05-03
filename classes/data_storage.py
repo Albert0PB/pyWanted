@@ -14,7 +14,8 @@ class WantedApiInfo:
     def __init__(self):
         self.__data_retrieved = self.__build_dataframe_from_api_info(self.__get_api_info())
         present = datetime.datetime.now()
-        self.__consult_datetime = f'{present.year}-{present.month}-{present.day}_{present.hour}:{present.minute}'
+        self.__consult_datetime = (f'{present.year}-{present.month}-{present.day}_'
+                                   f'{present.hour:02d}:{present.minute:20d}')
 
     @property
     def data_retrieved(self):

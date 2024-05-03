@@ -36,7 +36,7 @@ class SaverBarGraphPNG(Saver):
     @classmethod
     def save(cls, datasource: WantedApiInfo, data_extractor: DataExtractor):
         data_to_save = data_extractor.obtain_from(datasource)
-        cls.__generate_bar_graph(data_to_save, datasource.consult_datetime())
+        cls.__generate_bar_graph(data_to_save, datasource.consult_datetime)
 
     @staticmethod
     def __generate_bar_graph(data: dict[str: int], filename: str):

@@ -52,6 +52,7 @@ def main():
                     extractor = data_extractors.SuspectsPerOfficeExtractor()
                     csv_saver, png_saver = data_savers.SaverCSV, data_savers.SaverBarGraphPNG
                     csv_saver.save(datasource=data, data_extractor=extractor)
+                    png_saver.save(datasource=data, data_extractor=extractor)
                     print('Data successfully saved (in folder "data_results").')
 
 
