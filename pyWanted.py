@@ -11,7 +11,7 @@ url = 'https://api.fbi.gov/wanted/v1/list'
 
 
 def welcome():
-    print("\n==============================================\n"
+    print("\n===============================================\n"
           "\nWelcome to pyWanted:\n"
           "\nThe Python program to retrieve info\n"
           "\nabout the FBI Most-Wanted suspects.\n"
