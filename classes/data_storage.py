@@ -11,12 +11,11 @@ ENDPOINT = 'https://api.fbi.gov/wanted/v1/list'
 class WantedApiInfo:
     __slots__ = ['__data_retrieved', '__consult_datetime']
 
-    # TODO: fix consult_datetime format
     def __init__(self):
         self.__data_retrieved = self.__build_dataframe_from_api_info(self.__get_api_info())
         present = datetime.datetime.now()
         self.__consult_datetime = (f'{present.year}-{present.month}-{present.day}_'
-                                   f'{present.hour}:{present.minute}')
+                                   f'{present.hour:0>2d}:{present.minute:0>2d}')
 
     @property
     def data_retrieved(self):

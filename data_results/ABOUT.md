@@ -1,0 +1,1 @@
+This folder ('data_results') solely purpose is to contain the resulting files of executing the program ('pyWanted').

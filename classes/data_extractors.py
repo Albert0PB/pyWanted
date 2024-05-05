@@ -26,4 +26,6 @@ class SuspectsPerOfficeExtractor(DataExtractor):
                 suspect_count_per_office.update({'No office related': offices_repetitions_list.count(None)})
             else:
                 suspect_count_per_office.update({f'{office}': offices_repetitions_list.count(office)})
-        return dict(collections.OrderedDict(sorted(suspect_count_per_office.items())))
+        ordered_suspects_count = dict(collections.OrderedDict(sorted(suspect_count_per_office.items())))
+        return dict({'offices': list(ordered_suspects_count.keys()),
+                     'suspect_count': list(ordered_suspects_count.values())})

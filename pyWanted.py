@@ -16,7 +16,7 @@ ENDPOINT = 'https://api.fbi.gov/wanted/v1/list'
 def welcome():
     print("\n===============================================\n"
           "\nWelcome to pyWanted:\n"
-          "\nThe Python program to retrieve info\n"
+          "\nThe Python program to retrieve info"
           "\nabout the FBI Most-Wanted suspects.\n"
           '\n==============================================='
           '\n             __    __            _           _ '

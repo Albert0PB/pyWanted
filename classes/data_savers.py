@@ -20,15 +20,15 @@ class SaverCSV(Saver):
         data_to_save = data_extractor.obtain_from(datasource)
         cls.__write_csv(data_to_save, datasource.consult_datetime)
 
-    # TODO: change the way the CSV is writen. Suspects per office should have two columns and fifty-ish rows.
     @staticmethod
     def __write_csv(data_to_write, filename):
-        csv_fields = data_to_write.keys()
         filename = f'./data_results/{filename}'
         with open(f'{filename}.csv', mode='w') as csv_file:
-            writer = csv.DictWriter(csv_file, fieldnames=csv_fields)
-            writer.writeheader()
-            writer.writerow(data_to_write)
+            writer = csv.writer(csv_file)
+            writer.writerow(data_to_write.keys())
+            for i in range(len(list(data_to_write[list(data_to_write.keys())[0]]))):
+                row_to_write = [data_to_write[key][i] for key in data_to_write.keys()]
+                writer.writerow(row_to_write)
 
 
 @typechecked
@@ -39,8 +39,8 @@ class SaverBarGraphPNG(Saver):
         cls.__generate_bar_graph(data_to_save, datasource.consult_datetime)
 
     @staticmethod
-    def __generate_bar_graph(data: dict, filename: str):
-        items, count = list(data.keys()), list(data.values())
+    def __generate_bar_graph(data: dict[str, list[str, int]], filename: str):
+        items, count = list(data[list(data.keys())[0]]), list(data[list(data.keys())[1]])
         fig, ax = plt.subplots()
         plt.xticks(rotation=90)
         ax.tick_params(axis='x', which='major', pad=15, labelsize=5)
